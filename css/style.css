@@ -1,0 +1,221 @@
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 30px;
+    background-color:rgb(174, 214, 253);
+    padding: 5px;     
+    color: black;  
+}
+
+header{
+    background-color: black;
+}
+.nav {
+    overflow:hidden;
+    background-color: whitesmoke;
+}
+.nav-link {
+    color: black;
+    float: none;
+    width: auto;
+  }
+  
+.nav-link.active {
+    background-color: white;
+    text-decoration:underline;
+    font-weight: bolder;
+    color: black;
+  }
+
+.skip-link {
+    position: absolute;
+    display: inline-block;
+    margin-top: -8px;
+    padding: 10px;
+    line-height: 1;
+    font-size: 15px;
+    color: black    ;
+    transform: translateY(0);
+    transition: transform 250ms ease-in;
+  }
+
+.skip-link:not(:focus) {
+    transform: translateY(-5rem);
+  }
+header{border-radius: 15px;
+    border-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.paragraph{
+    display:block;
+
+}
+h1{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 45px;}
+
+h2{text-align: center;
+    border-style:solid;
+    border-radius: 15px;
+    font-size: 50px;
+    color: black;
+    border-color: black;
+    background-color: rgb(220, 245, 255);
+    border-width: 2px;
+    padding: 5px; 
+    
+}
+h3{text-align:center;
+    font-size: 25px;
+    color: navy;
+    }
+
+
+
+/* IMAGES STYLE */
+/* containers */
+
+.pics{
+    display: grid;
+    grid-gap: 10px;
+}
+.pic{
+    text-align: center;
+    flex: 1 0 100%;
+}
+.pic img{
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 5px;
+    overflow:hidden; 
+}
+.travel_grid, .pet_grid{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* items */
+.a, .d {
+    margin: 10px; 
+    text-align: center;
+    flex: 1 1 100%; 
+    max-width: 100%;
+}
+
+/* images */
+.a img, .d img{
+    width:100%;
+    height:auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 5px;
+    overflow:hidden;  
+}
+
+/* text */
+.par {
+    justify-content: center;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cookie, .bread, .pancake {
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+    margin: 10px; 
+    flex: 1 0 100%; 
+    max-width: 100%;
+}
+
+.cookie img, .bread img, .pancake img{
+    /* justify-items: center;
+    text-align: center; */
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 5px;
+    overflow:hidden;  
+}
+ 
+h4, h5 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ingredients, .story {
+    padding: 10px;
+    justify-self: center;
+    text-decoration: none;
+    font-size: 40px;
+
+}
+.steps p{
+    font-size: 45px;
+
+}
+
+
+@media only screen and (min-width: 768px){
+.pics{
+    grid-template-columns: repeat(2, 1fr);
+}
+.nav-link{
+    display: inline-block;
+    width: 90%;
+    color: black;
+    text-decoration: none;
+}
+
+.travel_grid, .pet_grid{
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.a{
+    flex-basis: calc((100% / 3) - 20px); 
+    max-width: calc((100% / 3) - 20px);
+    margin: 10px;
+    }
+.d{
+    flex-basis: calc((100% / 2) - 20px); 
+    max-width: calc((100% / 2) - 20px);
+    margin: 10px;
+}
+
+    @supports (display:grid){
+.travel_gridm .pet_grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+    }
+    }
+
+    @media only screen and (min-width: 1900px){
+.d{
+    flex-basis: calc((100% / 4) - 20px); 
+    max-width: calc((100% / 4) - 20px);
+    margin: 10px;
+    }
+}

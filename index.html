@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <a href="#pageTitle" class="skip-link" >Skip to main content</a>
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pets.html" class="nav-link">Pets</a></li>
+                <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+                <li><a href="travel.html" class="nav-link">Travel</a></li>
+            </ul>
+        </nav>
+    <header>
+    </header>
+    <main>
+        <h1 tabindex="-1" id="pageTitle">Welcome</h1>
+            <p>Welcome to The Site, your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
+            <div class="form">
+                <form action="https://formspree.io/f/meqyzvbv"
+                method="POST">
+                    <fieldset>
+                        <legend>Welcome</legend>
+                        <div id="check">
+                            <label>
+                                <input type="checkbox" name="subscribe" id="subscribe" onclick="Home(this)">
+                                Check to enter your name and email.
+                            </label>
+                        </div>
+                        <div id="emailDiv" style="display:none;">
+                            <label>
+                                Name:
+                                <input type="text" name="name" id="name">
+                            </label>
+                            <label>
+                                Email:
+                                <input type="email" name="email" id="email">
+                            </label>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </div>
+        <div class="stuff">
+            <p>Today on The Site Feaures 3 really cute pets:</p>
+            <ul>
+                <li>Bacon</li>
+                <li>Fitz</li>
+                <li>Peddie</li>
+            </ul>
+        </div>
+        <div>
+            <p>3 yummy recipes:</p>
+            <ul>
+                <li>Double Chocolate Chip Cookies</li>
+                <li>Chocolate Chip Banana Bread</li>
+                <li>Swedish Pancakes</li>
+            </ul>
+        </div>
+        <div>
+            <p>And 5 amazing travel destinations:</p>
+            <ul>
+                <li>Lake Tahoe, Utah</li>
+                <li>Niagra Falls, New York</li>
+                <li>Rome, Italy</li>
+                <li>Hawaii, United States</li>
+                <li>Monteverde, Costa Rica </li>
+            </ul>
+        </div>
+<div>
+<h2>Thank you for checking out the site.</h2>
+<p>Enjoy this picture of a cute Shih Tzu Bichon mix named Lucy.</p>
+<div class="pics">
+    <div class="pic">
+        <img src = "images/LucyuIMG_1659.jpg" width="400" alt="A small white dog sitting on grass.">
+        <p>Lucy loves the sun.</p>
+    </div>
+    <div class="pic"> 
+        <img src = "images/71449556787__3229BD1E-F2B6-4B5D-AEFF-350A2039CB93.jpeg" width="400" alt="A small white dog standing on a backyard porch.">
+        <p>Lucy loves playing in the yard.</p>
+    </div>
+    </div>
+</div>
+
+            <!-- Jackie Wolf -->
+    </main>
+<script src="js/script.js"> </script>
+</body>
+</html>
